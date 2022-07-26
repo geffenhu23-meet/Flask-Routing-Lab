@@ -3,8 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+.cat{
+  border: 5px outset purple;
+  background-color: lightpink;
+  text-align: center;
+}
+.cat1 { border: 5px outset purple;
+  background-color: lightpink;
+  text-align: center;
+}
+.cat2{
+  border: 5px outset purple;
+  background-color: lightpink;
+  text-align: center;
+}
+</style>
 </head>
 <body>
 
+
+<div class="myDiv">
+
+<h1>wonderland</h1>
+<h2>Any think you can dream of we have</h2>
+</div>
+<img src="{{ url_for('static', filename='wland.webp')}}" alt="wland pic">
+<div class="cat">
+  <h2>toys</h2>
+  <p>bicycle.
+train.
+doll.
+ball.
+teddy bear.
+kite.
+rubber ducky.
+airplane.</p>
+
+</div>
+
+<div class="cat1">
+  <h2>home</h2>
+  <p>Kitchen table.
+Refrigerator.
+Dustbin.
+Kettle.
+Toaster.
+Microwave/Gas oven.
+Blender/ Mixer.
+Bread bin.</p>
+
+</div>
+
+<div class="cat2">
+  <h2>electronics</h2>
+  <p>Air purifier.
+Air conditioner.
+Alarm clock.
+Backup charger.
+Bread maker.
+Banknote counter.
+Blender.
+Bluetooth speaker.</p>
+
+</div>
+<a href="/product">prod</a>
 </body>
 </html>
