@@ -3,35 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>Product</title>
+    <style>
+.myDiv {
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+.cat0{
+  border: 5px outset purple;
+  background-color: lightpink;
+  text-align: center;
+}
+.cat11 { border: 5px outset purple;
+  background-color: lightpink;
+  text-align: center;
+}
+.cat21{
+  border: 5px outset purple;
+  background-color: lightpink;
+  text-align: center;
+}
+.link1{
+  border: 5px outset red;
+  background-color: lightblue;
+  text-align: center;
+}
+</style>
 </head>
 <body>
+
+
+<div class="myDiv">
+
+<h1>wonderland</h1>
+</div>
+<img src="{{ url_for('static', filename='wland.webp')}}" >
+<div class="cat0">
+  <h2>toys</h2>
+  <img src="{{ url_for('static', filename='toys.webp')}}" alt="toys pic">
+  <a href="/cart">cart page</a>
+  <p>bicycle.
+train.
+doll.
+ball.
+teddy bear.
+kite.
+rubber ducky.
+airplane.</p>
+
+</div>
+
+<div class="cat11">
+  <h2>home</h2>
+    <img src="{{ url_for('static', filename='index.jpeg')}}" alt="home pic">
+  <a href="/cart">cart page</a>
+  <p>Kitchen table.
+Refrigerator.
+Dustbin.
+Kettle.
+Toaster.
+Microwave/Gas oven.
+Blender/ Mixer.
+Bread bin.</p>
+
+</div>
+
+<div class="cat21">
+  <h2>electronics</h2>
+   <img src="{{ url_for('static', filename='electronics.jpeg')}}" alt="electronics pic">
+  <a href="/cart">cart page</a>
+  <p>Air purifier.
+  Air conditioner.
+  Alarm clock.
+  Backup charger.
+  Bread maker.
+  Banknote counter.
+  Blender.
+  Bluetooth speaker.</p>
+
+</div>
+<div class="link1">
+    <a href="/">home page</a>
+    <a href="/cart">cart page</a>
+</div>
 
 </body>
 </html>
-
-<!-- 
-<!DOCTYPE html>
-<html>
-<head>
-<title>FOOD PAGE</title>
-<style type="text/css">
-body {background-color: blue;}
-#ttl {color : white;}
-.pg {color: yellow;}
-
-</style>
-
-</head>
-<body>
-
-<h1 id="ttl">Food</h1>
-<h2 class = "pg" >Food is a basic human need</h2>
-<h2 class = "pg" >Good food is the foundation of genuine happiness</h2>
-<img src="food.webp" alt="food pic" width= "400px">
-<a class= "pg" href="https://en.wikipedia.org/wiki/Food">wikipedia-food</a>
-
-<button onclick='changeBackgroundColor("red")'>change bg color</button>
-
-<script src="mainfrontend.js"></script>
-</body>
-</html> -->

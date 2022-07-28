@@ -1,7 +1,11 @@
 from flask import Flask, redirect, request, render_template, url_for
 
 
-app = Flask(__name__)
+app = Flask(  # Create a flask app
+    __name__,
+    template_folder='templates',  # Name of html file folder
+    static_folder='static'  # Name of directory for static files
+)
 
 # Your code should be below
 @app.route('/')
@@ -10,13 +14,10 @@ def index():
 
 
 @app.route('/product')
-def pro():
+def index():
     return render_template('product.html')
 
-@app.route('/cart')
-def car():
-    return render_template('cart.html')
 # Your code should be above
 
 if __name__ == "__main__":  # Makes sure this is the main process
-    app.run(port=1237, debug=True)
+    app.run(debug=True)
